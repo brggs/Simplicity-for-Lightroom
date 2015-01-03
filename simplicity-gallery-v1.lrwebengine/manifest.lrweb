@@ -1,0 +1,42 @@
+--[[
+
+Simplicity Gallery
+ Copyright 2014 Andrew Briggs - brggs.co.uk
+
+]]
+
+importTags( "lr", "com.adobe.lightroom.default" )
+
+AddGridPages { 
+	template = "index.html.lp",
+	rows=999, 
+	columns=999,
+}
+
+AddPhotoPages {
+	variant = '_large',
+}
+
+AddResources { 
+	source = "resources/js",
+	destination = "js", 
+}
+
+AddResources { 
+	source = "resources/styles",
+	destination = "styles", 
+}
+
+AddResources { 
+	source = "resources/img",
+	destination = "img", 
+}
+
+AddResources { 
+	source = "resources/fancybox",
+	destination = "fancybox", 
+}
+
+AddCustomCSS {
+	filename='styles/custom.css',
+}

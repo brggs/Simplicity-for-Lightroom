@@ -1,0 +1,209 @@
+--[[
+
+Simplicity Gallery
+ Copyright 2014 Andrew Briggs - brggs.co.uk
+
+]]
+
+return {
+	LrSdkVersion = 2.0,
+	LrSdkMinimumVersion = 2.0,    
+
+	version = 1.1,
+	title = "Simplicity Gallery",
+	id = "Simplicity-Gallery-v1",
+	galleryType = "lua",
+	aboutBoxFile = "about.html",
+	maximumGallerySize = 1000,
+
+	model = {
+
+		["metadata.siteTitle"] = "Simplicity Gallery",
+		["metadata.siteDescription"] = "A gallery of awesome photos.",
+
+		["metadata.social.fivehundredpx"] = "500px",
+		["metadata.social.flickr"] = "flickr",
+		["metadata.social.deviantArt"] = "deviantArt",
+		["metadata.social.instagram"] = "instagram",
+		["metadata.social.twitter"] = "twitter",
+
+		["metadata.email"] = "photographer@photo.com",
+
+		["metadata.copyright"] = "Copyright",
+
+		["appearance.socialIcons.display"] = true,
+		["appearance.email.display"] = true,
+
+		["appearance.categories.display"] = true,
+		["appearance.categories.value"] = "Landscape, Macro",
+
+		["appearance.body.background-color"] = "#ffffff",
+		["appearance.body.cssID"] = "body",
+		["appearance.title.color"] = "#222222",
+		["appearance.title.cssID"] = "#header-text",
+		["appearance.text.color"] = "#222222",
+		["appearance.text.cssID"] = "body",
+
+		["lightroomApplication.jpegQuality"] = 80,
+		["lightroomApplication.useWatermark"] = true,
+		["lightroomApplication.identityPlateExport"] = "(main)",
+
+		["photoSizes.thumb.height"] = 2000, 
+		["photoSizes.thumb.width"] = 350,
+		["photoSizes.thumb.metadataExportMode"] = "copyright",
+		["photoSizes.thumb.useWatermark"] = false,
+
+		["photoSizes.large.width"] = 1023,
+		["photoSizes.large.height"] = 1023,
+
+		["perImageSetting.description"] = {
+			enabled = true,
+			value = "{{com.adobe.caption}}",
+			title = LOC "$$$/WPG/HTML/CSS/properties/ImageCaption=Caption",
+		},
+		["perImageSetting.title"] = {
+			enabled = true,
+			value = "{{com.adobe.title}}",
+			title = LOC "$$$/WPG/HTML/CSS/properties/ImageTitle=Title",
+		},
+		["perImageSetting.keywords"] = {
+			enabled = true,
+			value = "{{com.adobe.keywords}}",
+			title = LOC "$$$/WPG/HTML/CSS/properties/ImageTitle=Keywords",
+		},
+	},
+
+	iconicPreview = {
+		flashMovie = "iconic_preview/iconic_preview.png",
+	},
+
+	views = function( controller, f )
+		local LrView = import "LrView"
+		local bind = LrView.bind
+		local multibind = f.multibind
+			return {
+				labels = f:panel_content {
+					bind_to_object = controller,
+						f:subdivided_sections {
+							f:labeled_text_input {
+								title = "Page Title:",
+								value = bind "metadata.siteTitle",
+							},
+						},
+						f:subdivided_sections {
+							f:labeled_text_input {
+								title = "Page Description:",
+								value = bind "metadata.siteDescription",
+							},
+						},
+						f:subdivided_sections {
+							f:header_section {
+								f:checkbox_row {
+									title = "Show Social Icons",
+									value = bind "appearance.socialIcons.display",
+								},
+							},
+							f:labeled_text_input  {
+								title = "500px",
+								value = bind "metadata.social.fivehundredpx",
+							},
+							f:labeled_text_input  {
+								title = "Flickr",
+								value = bind "metadata.social.flickr",
+							},
+							f:labeled_text_input  {
+								title = "DeviantArt",
+								value = bind "metadata.social.deviantArt",
+							},
+							f:labeled_text_input  {
+								title = "Instagram",
+								value = bind "metadata.social.instagram",
+							},
+							f:labeled_text_input  {
+								title = "Twitter",
+								value = bind "metadata.social.twitter",
+							},
+						},
+						f:subdivided_sections {
+							f:header_section {
+								f:checkbox_row {
+									title = "Show Categories",
+									value = bind "appearance.categories.display",
+								},
+							},
+							f:labeled_text_input  {
+								title = "Categories (separated by commas)",
+								value = bind "appearance.categories.value",
+							},
+						},
+						f:subdivided_sections {
+							f:header_section {
+								f:checkbox_row {
+									title = "Show Email Address",
+									value = bind "appearance.email.display",
+								},
+							},
+							f:labeled_text_input  {
+								title = "Email Address",
+								value = bind "metadata.email",
+							},
+						},
+						f:subdivided_sections {
+							f:labeled_text_input {
+								title = "Copyright:",
+								value = bind "metadata.copyright",
+							},
+						},
+				},
+				colorPalette = f:panel_content {
+					bindToObject = controller,
+					f:subdivided_sections {
+						f:color_content_column {
+							f:label_and_color_row {
+								color = bind "appearance.body.background-color",
+								title = "Background Color",
+							},
+							f:label_and_color_row {
+								color = bind "appearance.title.color",
+								title = "Title font color",
+							},
+							f:label_and_color_row {
+								color = bind "appearance.text.color",
+								title = "Text font color",
+							},
+						},
+					},
+				},
+				outputSettings = f:panel_content {
+					bindToObject = controller,
+						f:subdivided_sections {
+
+							f:header_section_label {
+								title = "Large Images",
+							},
+			
+							f:slider_content_column {
+								f:slider_row {
+									title = "Quality",
+									value = bind "lightroomApplication.jpegQuality",
+									tracking = bind "lightroomApplication.jpegQuality.tracking",
+									tracking_value = "qualityTracking",
+									unit = "",
+									max = 100,
+									min = 0,
+									width_in_digits = 4,
+									precision = 0,
+									},
+							},
+				
+							f:header_section {
+								f:checkbox_row {
+									title = "Copyright Watermark",
+									value = bind "lightroomApplication.useWatermark",
+									},
+							},
+						},
+				},				
+			}
+	end,
+}
