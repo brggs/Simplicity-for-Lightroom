@@ -31,6 +31,7 @@ return {
 
 		["metadata.copyright"] = "Copyright",
 
+		["appearance.headerPic.display"] = true,
 		["appearance.socialIcons.display"] = true,
 		["appearance.email.display"] = true,
 
@@ -85,6 +86,12 @@ return {
 				labels = f:panel_content {
 					bind_to_object = controller,
 						f:subdivided_sections {
+							f:header_section {
+								f:checkbox_row {
+									title = "Show Header Picture",
+									value = bind "appearance.headerPic.display",
+								},
+							},
 							f:labeled_text_input {
 								title = "Page Title:",
 								value = bind "metadata.siteTitle",
