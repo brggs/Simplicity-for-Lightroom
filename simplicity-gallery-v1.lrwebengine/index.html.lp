@@ -67,7 +67,7 @@
       <lr:ThumbnailGrid>
         <lr:GridPhotoCell>
           <% local categories = image.metadata.keywords:gsub("[,]", '') %>
-          <a class="fancybox $categories" href="bin/images/large/<%= image.exportFilename %>.jpg" title="<%= image.metadata.title %>"> 
+          <a class="fancybox $categories" rel="gallery" href="bin/images/large/<%= image.exportFilename %>.jpg" title="<%= image.metadata.title %>">
             <img class="item lazy" alt="<%= image.metadata.title %>" data-original="bin/images/thumb/<%= image.exportFilename %>.jpg" style="width: <%=image.renditions.thumb.width%>px; height: <%=image.renditions.thumb.height%>px;" alt="Loading..." src="img/NFFFFFF-0.png" />
             <div class="loading"></div>
           </a>
