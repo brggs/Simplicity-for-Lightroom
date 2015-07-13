@@ -17,7 +17,9 @@
   <body class="text-center">
 
     <div class="row">
+      <% if model.appearance.headerPic.display then %>
       <img id="header-pic" class="img-circle" src="img/me.png" alt="$model.metadata.siteTitle" />
+      <% end %>
       <h1 id="header-text">$model.metadata.siteTitle</h1>
       <h4 id="header-description">$model.metadata.siteDescription</h4>
     </div>
