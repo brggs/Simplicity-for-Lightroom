@@ -34,9 +34,11 @@
     </div>
     <% end %> 
 
+    <% if model.appearance.email.display then %>
     <div class="row">
       <a id="email" href="mailto:$model.metadata.email" title="Email" target="_blank"><h5>$model.metadata.email</h5></a>
     </div>
+    <% end %> 
 
     <noscript>
       <div class="jumbotron">
