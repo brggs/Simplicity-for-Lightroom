@@ -12,12 +12,16 @@
     <link rel="stylesheet" type="text/css" href="styles/socicon.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   </head>
 
   <body class="text-center">
 
     <div class="row">
+      <% if model.appearance.headerPic.display then %>
       <img id="header-pic" class="img-circle" src="img/me.png" alt="$model.metadata.siteTitle" />
+      <% end %>
       <h1 id="header-text">$model.metadata.siteTitle</h1>
       <h4 id="header-description">$model.metadata.siteDescription</h4>
     </div>
@@ -32,9 +36,11 @@
     </div>
     <% end %> 
 
+    <% if model.appearance.email.display then %>
     <div class="row">
       <a id="email" href="mailto:$model.metadata.email" title="Email" target="_blank"><h5>$model.metadata.email</h5></a>
     </div>
+    <% end %> 
 
     <noscript>
       <div class="jumbotron">
@@ -63,7 +69,7 @@
       <lr:ThumbnailGrid>
         <lr:GridPhotoCell>
           <% local categories = image.metadata.keywords:gsub("[,]", '') %>
-          <a class="fancybox $categories" href="bin/images/large/<%= image.exportFilename %>.jpg" title="<%= image.metadata.title %>"> 
+          <a class="fancybox $categories" rel="gallery" href="bin/images/large/<%= image.exportFilename %>.jpg" title="<%= image.metadata.title %>">
             <img class="item lazy" alt="<%= image.metadata.title %>" data-original="bin/images/thumb/<%= image.exportFilename %>.jpg" style="width: <%=image.renditions.thumb.width%>px; height: <%=image.renditions.thumb.height%>px;" alt="Loading..." src="img/NFFFFFF-0.png" />
             <div class="loading"></div>
           </a>
@@ -83,8 +89,12 @@
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
     <script type="text/javascript" src="js/centermasonry.js"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
