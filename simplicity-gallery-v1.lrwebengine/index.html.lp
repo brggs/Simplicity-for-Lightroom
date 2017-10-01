@@ -28,11 +28,11 @@
 
     <% if model.appearance.socialIcons.display then %>
     <div class="row">
-      <a class="social-link" href="https://500px.com/$model.metadata.social.fivehundredpx" title="500px" target="_blank"><span class="socicon">w</span></a>
-      <a class="social-link" href="https://www.flickr.com/photos/$model.metadata.social.flickr/" title="Flickr" target="_blank"><span class="socicon">v</span></a>
-      <a class="social-link" href="http://<%= model.metadata.social.deviantArt %>.deviantart.com/" title="deviantART" target="_blank"><span class="socicon">J</span></a>
-      <a class="social-link" href="http://instagram.com/$model.metadata.social.instagram" title="Instagram" target="_blank"><span class="socicon">x</span></a>
-      <a class="social-link" href="https://twitter.com/$model.metadata.social.twitter" title="Twitter" target="_blank"><span class="socicon">a</span></a>
+      <% if model.metadata.social.fivehundredpx ~= "" then %><a class="social-link" href="https://500px.com/$model.metadata.social.fivehundredpx" title="500px" target="_blank"><span class="socicon">w</span></a><% end %>
+      <% if model.metadata.social.flickr ~= "" then %><a class="social-link" href="https://www.flickr.com/photos/$model.metadata.social.flickr/" title="Flickr" target="_blank"><span class="socicon">v</span></a><% end %>
+      <% if model.metadata.social.deviantArt ~= "" then %><a class="social-link" href="http://<%= model.metadata.social.deviantArt %>.deviantart.com/" title="deviantART" target="_blank"><span class="socicon">J</span></a><% end %>
+      <% if model.metadata.social.instagram ~= "" then %><a class="social-link" href="http://instagram.com/$model.metadata.social.instagram" title="Instagram" target="_blank"><span class="socicon">x</span></a><% end %>
+      <% if model.metadata.social.twitter ~= "" then %><a class="social-link" href="https://twitter.com/$model.metadata.social.twitter" title="Twitter" target="_blank"><span class="socicon">a</span></a><% end %>
     </div>
     <% end %> 
 
