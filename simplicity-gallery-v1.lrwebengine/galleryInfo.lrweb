@@ -47,6 +47,7 @@ return {
 
 		["lightroomApplication.jpegQuality"] = 80,
 		["lightroomApplication.useWatermark"] = true,
+		["lightroomApplication.watermarkID"] = "",
 		["lightroomApplication.identityPlateExport"] = "(main)",
 
 		["photoSizes.thumb.height"] = 2000, 
@@ -202,13 +203,8 @@ return {
 									precision = 0,
 									},
 							},
-				
-							f:header_section {
-								f:checkbox_row {
-									title = "Copyright Watermark",
-									value = bind "lightroomApplication.useWatermark",
-									},
-							},
+
+							f:watermark_section( controller ),
 						},
 				},				
 			}
