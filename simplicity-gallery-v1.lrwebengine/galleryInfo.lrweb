@@ -55,8 +55,8 @@ return {
 		["photoSizes.thumb.metadataExportMode"] = "copyright",
 		["photoSizes.thumb.useWatermark"] = false,
 
-		["photoSizes.large.width"] = 1023,
-		["photoSizes.large.height"] = 1023,
+		["photoSizes.large.width"] = 2048,
+		["photoSizes.large.height"] = 2048,
 
 		["perImageSetting.description"] = {
 			enabled = true,
