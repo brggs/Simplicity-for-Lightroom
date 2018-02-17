@@ -5,6 +5,8 @@ Simplicity is a web gallery plug-in for Adobe Lightroom.  It allows you to quick
 
 See [http://www.andrewbriggsphotography.co.uk/simplicity/](http://www.andrewbriggsphotography.co.uk/simplicity/) for a demo.
 
+Note this was developed for version 5 of Lightroom, and as such may not be compatible with later versions.
+
 Please [drop me an email](mailto:andrew@brggs.co.uk) if you have any comments or feedback.
 
 ###Features
