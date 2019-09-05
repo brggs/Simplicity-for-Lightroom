@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simplicity for Lightroom</title>
+
+    <meta name="description" content="Demo page for Simplicity for Lightroom">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/socicon.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  </head>
+
+  <body class="text-center">
+
+    <div class="row">
+            <img id="header-pic" class="img-circle" src="img/me.png" alt="Simplicity for Lightroom" />
+            <h1 id="header-text">Simplicity for Lightroom</h1>
+      <h4 id="header-description">Demo page for Simplicity for Lightroom</h4>
+    </div>
+
+        <div class="row">
+      <a class="social-link" href="https://500px.com/500px" title="500px" target="_blank"><span class="socicon">w</span></a>      <a class="social-link" href="https://www.flickr.com/photos/flickr/" title="Flickr" target="_blank"><span class="socicon">v</span></a>      <a class="social-link" href="http://deviantArt.deviantart.com/" title="deviantART" target="_blank"><span class="socicon">J</span></a>      <a class="social-link" href="http://instagram.com/instagram" title="Instagram" target="_blank"><span class="socicon">x</span></a>      <a class="social-link" href="https://twitter.com/twitter" title="Twitter" target="_blank"><span class="socicon">a</span></a>    </div>
+     
+
+        <div class="row">
+      <a id="email" href="mailto:photographer@photo.com" title="Email" target="_blank"><h5>photographer@photo.com</h5></a>
+    </div>
+     
+
+    <noscript>
+      <div class="jumbotron">
+        <h1>This site requires javascript!</h1>
+        <p>To view the gallery, please ensure that javascript is not disabled in your browser settings, or upgrade to a browser which supports javascript such as Google's Chrome.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://www.google.com/chrome/browser/desktop/" role="button">Get Chrome</a></p>
+      </div>
+    </noscript>
+
+        <div class="row" id="cat-menu">
+      <ul class="list-inline">
+        <li><a href="#" onclick="resetCategory();return false;">All</a></li>
+      
+                            <li><a href="#" onclick="setCategory('Landscape');return false;">Landscape</a></li>
+                            <li><a href="#" onclick="setCategory('Macro');return false;">Macro</a></li>
+                            <li><a href="#" onclick="setCategory('Music');return false;">Music</a></li>
+              </ul>      
+    </div>
+     
+
+    <div class="row">
+      <div id="isotope-container">
+
+                                        <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_XT15642-Edit.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_XT15642-Edit.jpg" style="width: 350px; height: 211px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox " rel="gallery" href="bin/images/large/_XT15577.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_XT15577.jpg" style="width: 350px; height: 211px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_XT15426-Edit.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_XT15426-Edit.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_XT15365-Edit.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_XT15365-Edit.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Macro" rel="gallery" href="bin/images/large/_DSF4552.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_DSF4552.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF4445.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_DSF4445.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF4249-Edit.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_DSF4249-Edit.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF4165-Edit.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_DSF4165-Edit.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF4073.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_DSF4073.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Macro" rel="gallery" href="bin/images/large/_DSF3787-Edit.jpg" title="Frosted Leaves">
+            <img class="item lazy" alt="Frosted Leaves" data-original="bin/images/thumb/_DSF3787-Edit.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK Winter cumbria fell fujifilm golden lake district langdale light loughrigg morning sun sunrise tarn xe1 xf1024" rel="gallery" href="bin/images/large/_DSF3734-Edit.jpg" title="Loughrigg Sunrise IV">
+            <img class="item lazy" alt="Loughrigg Sunrise IV" data-original="bin/images/thumb/_DSF3734-Edit.jpg" style="width: 350px; height: 211px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK Winter cumbria fell fujifilm golden lake district langdale light loughrigg morning sun sunrise tarn xe1 xf1024" rel="gallery" href="bin/images/large/_DSF3714-Edit.jpg" title="Loughrigg Sunrise III">
+            <img class="item lazy" alt="Loughrigg Sunrise III" data-original="bin/images/thumb/_DSF3714-Edit.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3675-Edit-2.jpg" title="Loughrigg Sunrise III">
+            <img class="item lazy" alt="Loughrigg Sunrise III" data-original="bin/images/thumb/_DSF3675-Edit-2.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK Winter cumbria fell first light fujifilm lake lake district langdale morning rays sun sunlight xe1 xf1024" rel="gallery" href="bin/images/large/_DSF3665-Edit.jpg" title="Loughrigg Sunrise I">
+            <img class="item lazy" alt="Loughrigg Sunrise I" data-original="bin/images/thumb/_DSF3665-Edit.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK Winter contrast cumbria dramatic fields fujifilm lake district langdale light mountain rays snow sun sunlight tarn xe1 xf1024" rel="gallery" href="bin/images/large/_DSF3592-Edit.jpg" title="Little Langdale">
+            <img class="item lazy" alt="Little Langdale" data-original="bin/images/thumb/_DSF3592-Edit.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK Winter cumbria evening fell fujifilm heather lake district langdale light loughrigg mountain rays sun sunlight sunset xe1 xf1024" rel="gallery" href="bin/images/large/_DSF3412-Edit.jpg" title="Loughrigg Sunset">
+            <img class="item lazy" alt="Loughrigg Sunset" data-original="bin/images/thumb/_DSF3412-Edit.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3372.jpg" title="Tree on Loughrigg Fell">
+            <img class="item lazy" alt="Tree on Loughrigg Fell" data-original="bin/images/thumb/_DSF3372.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3300-Edit.jpg" title="Blea Tarn">
+            <img class="item lazy" alt="Blea Tarn" data-original="bin/images/thumb/_DSF3300-Edit.jpg" style="width: 350px; height: 280px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3245-Edit.jpg" title="Elterwater Rainbow">
+            <img class="item lazy" alt="Elterwater Rainbow" data-original="bin/images/thumb/_DSF3245-Edit.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3222.jpg" title="Bury St. Edmunds Graveyard">
+            <img class="item lazy" alt="Bury St. Edmunds Graveyard" data-original="bin/images/thumb/_DSF3222.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_DSF3109.jpg" title="Mist in the Woods">
+            <img class="item lazy" alt="Mist in the Woods" data-original="bin/images/thumb/_DSF3109.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox " rel="gallery" href="bin/images/large/_DSF3088.jpg" title="Sam">
+            <img class="item lazy" alt="Sam" data-original="bin/images/thumb/_DSF3088.jpg" style="width: 350px; height: 280px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF2996-Edit.jpg" title="Stair Hole">
+            <img class="item lazy" alt="Stair Hole" data-original="bin/images/thumb/DSCF2996-Edit.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK beach chalk cliff coast coastline cove dorset durdle door geology jurrasic sea sun sunset" rel="gallery" href="bin/images/large/DSCF2829_-_Photoshop-Edit.jpg" title="Durdle Door Sunset">
+            <img class="item lazy" alt="Durdle Door Sunset" data-original="bin/images/thumb/DSCF2829_-_Photoshop-Edit.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF2856.jpg" title="Man of War Cove">
+            <img class="item lazy" alt="Man of War Cove" data-original="bin/images/thumb/DSCF2856.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape Macro" rel="gallery" href="bin/images/large/DSCF2536.jpg" title="Peruvian Flowers, Lima">
+            <img class="item lazy" alt="Peruvian Flowers, Lima" data-original="bin/images/thumb/DSCF2536.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF2211.jpg" title="Incan Hills">
+            <img class="item lazy" alt="Incan Hills" data-original="bin/images/thumb/DSCF2211.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF2170-Edit.jpg" title="Machu Picchu">
+            <img class="item lazy" alt="Machu Picchu" data-original="bin/images/thumb/DSCF2170-Edit.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF2154-Edit.jpg" title="Machu Picchu">
+            <img class="item lazy" alt="Machu Picchu" data-original="bin/images/thumb/DSCF2154-Edit.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1913.jpg" title="Incan Sunrise">
+            <img class="item lazy" alt="Incan Sunrise" data-original="bin/images/thumb/DSCF1913.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1777.jpg" title="Willka Wiqi, Peru">
+            <img class="item lazy" alt="Willka Wiqi, Peru" data-original="bin/images/thumb/DSCF1777.jpg" style="width: 350px; height: 211px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Andes Inca Landscape Peru Summer bridge cactus flow holiday km82 mountain river rocky sacred trail trek valley water" rel="gallery" href="bin/images/large/DSCF1766.jpg" title="The Incan Sacred Valley, Peru">
+            <img class="item lazy" alt="The Incan Sacred Valley, Peru" data-original="bin/images/thumb/DSCF1766.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Macro" rel="gallery" href="bin/images/large/DSCF1660.jpg" title="Peruvian Wool">
+            <img class="item lazy" alt="Peruvian Wool" data-original="bin/images/thumb/DSCF1660.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1461.jpg" title="Lake District">
+            <img class="item lazy" alt="Lake District" data-original="bin/images/thumb/DSCF1461.jpg" style="width: 350px; height: 152px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1417.jpg" title="St. Pauls">
+            <img class="item lazy" alt="St. Pauls" data-original="bin/images/thumb/DSCF1417.jpg" style="width: 350px; height: 438px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1379-Edit.jpg" title="Red Cuillin">
+            <img class="item lazy" alt="Red Cuillin" data-original="bin/images/thumb/DSCF1379-Edit.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1327-Edit.jpg" title="Portree Forest">
+            <img class="item lazy" alt="Portree Forest" data-original="bin/images/thumb/DSCF1327-Edit.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1321.jpg" title="Morning Mist">
+            <img class="item lazy" alt="Morning Mist" data-original="bin/images/thumb/DSCF1321.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1307.jpg" title="Fairy Pools">
+            <img class="item lazy" alt="Fairy Pools" data-original="bin/images/thumb/DSCF1307.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1286.jpg" title="Fairy Pools">
+            <img class="item lazy" alt="Fairy Pools" data-original="bin/images/thumb/DSCF1286.jpg" style="width: 350px; height: 280px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1195.jpg" title="Fairy Pools">
+            <img class="item lazy" alt="Fairy Pools" data-original="bin/images/thumb/DSCF1195.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF1110-Edit.jpg" title="Black Cuillin">
+            <img class="item lazy" alt="Black Cuillin" data-original="bin/images/thumb/DSCF1110-Edit.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0941.jpg" title="Neist Point">
+            <img class="item lazy" alt="Neist Point" data-original="bin/images/thumb/DSCF0941.jpg" style="width: 350px; height: 280px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0826-Edit.jpg" title="Trotternish Ridge">
+            <img class="item lazy" alt="Trotternish Ridge" data-original="bin/images/thumb/DSCF0826-Edit.jpg" style="width: 350px; height: 197px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0778.jpg" title="Old Man of Storr">
+            <img class="item lazy" alt="Old Man of Storr" data-original="bin/images/thumb/DSCF0778.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0740.jpg" title="Glen Coe">
+            <img class="item lazy" alt="Glen Coe" data-original="bin/images/thumb/DSCF0740.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain Buachaille Etive Mor Highland Landscape UK Walking bridge mountain path scotland trail" rel="gallery" href="bin/images/large/DSCF0732.jpg" title="Buachaille Etive Mor">
+            <img class="item lazy" alt="Buachaille Etive Mor" data-original="bin/images/thumb/DSCF0732.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0716.jpg" title="Balloon Flight at Sunset">
+            <img class="item lazy" alt="Balloon Flight at Sunset" data-original="bin/images/thumb/DSCF0716.jpg" style="width: 350px; height: 197px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF0488.jpg" title="Elbow">
+            <img class="item lazy" alt="Elbow" data-original="bin/images/thumb/DSCF0488.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0427.jpg" title="Path to Llyn Idwal">
+            <img class="item lazy" alt="Path to Llyn Idwal" data-original="bin/images/thumb/DSCF0427.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0391.jpg" title="Dolbadarn Castle, Llanberis">
+            <img class="item lazy" alt="Dolbadarn Castle, Llanberis" data-original="bin/images/thumb/DSCF0391.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0382.jpg" title="Dolbadarn Castle, Llanberis">
+            <img class="item lazy" alt="Dolbadarn Castle, Llanberis" data-original="bin/images/thumb/DSCF0382.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0369.jpg" title="South Stack Lighthouse">
+            <img class="item lazy" alt="South Stack Lighthouse" data-original="bin/images/thumb/DSCF0369.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0330.jpg" title="Westminster Bridge">
+            <img class="item lazy" alt="Westminster Bridge" data-original="bin/images/thumb/DSCF0330.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/DSCF0300.jpg" title="Westminster Bridge">
+            <img class="item lazy" alt="Westminster Bridge" data-original="bin/images/thumb/DSCF0300.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF2213.jpg" title="Gabrielle Aplin">
+            <img class="item lazy" alt="Gabrielle Aplin" data-original="bin/images/thumb/DSCF2213.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF2196.jpg" title="Seth Lakeman">
+            <img class="item lazy" alt="Seth Lakeman" data-original="bin/images/thumb/DSCF2196.jpg" style="width: 350px; height: 232px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF2139.jpg" title="KT Tunstall">
+            <img class="item lazy" alt="KT Tunstall" data-original="bin/images/thumb/DSCF2139.jpg" style="width: 350px; height: 232px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF1952.jpg" title="Frightened Rabbit">
+            <img class="item lazy" alt="Frightened Rabbit" data-original="bin/images/thumb/DSCF1952.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Footpath Great Britain Landscape North Yorkshire Pen-y-Ghent Pennine Way UK Walking direction path pennine sign signpost" rel="gallery" href="bin/images/large/_MG_4428.jpg" title="Pennine Way">
+            <img class="item lazy" alt="Pennine Way" data-original="bin/images/thumb/_MG_4428.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_4287.jpg" title="View from Pavey Ark">
+            <img class="item lazy" alt="View from Pavey Ark" data-original="bin/images/thumb/_MG_4287.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_4215.jpg" title="Elter Water">
+            <img class="item lazy" alt="Elter Water" data-original="bin/images/thumb/_MG_4215.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape Summer flow godafoss iceland icelandic river water waterfall" rel="gallery" href="bin/images/large/_MG_3135-Edit-2.jpg" title="Goðafoss">
+            <img class="item lazy" alt="Goðafoss" data-original="bin/images/thumb/_MG_3135-Edit-2.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape dettifoss iceland icelandic power powerful river water waterfall" rel="gallery" href="bin/images/large/_MG_3074.jpg" title="Dettifoss">
+            <img class="item lazy" alt="Dettifoss" data-original="bin/images/thumb/_MG_3074.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape flow iceland icelandic river seljalandsfoss tall water waterfall" rel="gallery" href="bin/images/large/_MG_2993.jpg" title="Seljalandsfoss">
+            <img class="item lazy" alt="Seljalandsfoss" data-original="bin/images/thumb/_MG_2993.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape flow golden circle gullfoss iceland icelandic rainbow river water waterfall" rel="gallery" href="bin/images/large/_MG_2984.jpg" title="Gullfoss">
+            <img class="item lazy" alt="Gullfoss" data-original="bin/images/thumb/_MG_2984.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain Landscape Summer UK hills lake mountain path snowdonia wales" rel="gallery" href="bin/images/large/_MG_2932.jpg" title="Lakes in the Snowdon Horseshoe">
+            <img class="item lazy" alt="Lakes in the Snowdon Horseshoe" data-original="bin/images/thumb/_MG_2932.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape Spring UK blue bluebells evening flowers forest woodland" rel="gallery" href="bin/images/large/_MG_2856.jpg" title="Bluebells">
+            <img class="item lazy" alt="Bluebells" data-original="bin/images/thumb/_MG_2856.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape Summer UK coast coastline dorset evening jurrasic portland pulpit rock sea sunny wave" rel="gallery" href="bin/images/large/_MG_2223.jpg" title="Pulpit Rock">
+            <img class="item lazy" alt="Pulpit Rock" data-original="bin/images/thumb/_MG_2223.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain England Landscape UK arch beach chalk cliff cloudy coast coastline dorset durdle durdle door jurrasic sea" rel="gallery" href="bin/images/large/_MG_2161.jpg" title="Durdle Door">
+            <img class="item lazy" alt="Durdle Door" data-original="bin/images/thumb/_MG_2161.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF0253.jpg" title="Ingrid Michaelson">
+            <img class="item lazy" alt="Ingrid Michaelson" data-original="bin/images/thumb/DSCF0253.jpg" style="width: 350px; height: 232px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Music" rel="gallery" href="bin/images/large/DSCF0214.jpg" title="Ash">
+            <img class="item lazy" alt="Ash" data-original="bin/images/thumb/DSCF0214.jpg" style="width: 350px; height: 232px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Britain Landscape UK black and white lake lakeside loch loch lomond scotland tree" rel="gallery" href="bin/images/large/_MG_1670.jpg" title="">
+            <img class="item lazy" alt="" data-original="bin/images/thumb/_MG_1670.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1610.jpg" title="North Uist">
+            <img class="item lazy" alt="North Uist" data-original="bin/images/thumb/_MG_1610.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1570.jpg" title="Miniature Standing Stones on Harris">
+            <img class="item lazy" alt="Miniature Standing Stones on Harris" data-original="bin/images/thumb/_MG_1570.jpg" style="width: 350px; height: 525px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1401.jpg" title="Callanish Stones">
+            <img class="item lazy" alt="Callanish Stones" data-original="bin/images/thumb/_MG_1401.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1388.jpg" title="Butt of Lewis">
+            <img class="item lazy" alt="Butt of Lewis" data-original="bin/images/thumb/_MG_1388.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1369.jpg" title="Beach on the Isle of Lewis">
+            <img class="item lazy" alt="Beach on the Isle of Lewis" data-original="bin/images/thumb/_MG_1369.jpg" style="width: 350px; height: 350px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1365.jpg" title="Beach on the Isle of Lewis">
+            <img class="item lazy" alt="Beach on the Isle of Lewis" data-original="bin/images/thumb/_MG_1365.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1300.jpg" title="Eilean Donan">
+            <img class="item lazy" alt="Eilean Donan" data-original="bin/images/thumb/_MG_1300.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1176.jpg" title="Summit of Snowdon">
+            <img class="item lazy" alt="Summit of Snowdon" data-original="bin/images/thumb/_MG_1176.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_1121_Panorama.jpg" title="Snowdonia">
+            <img class="item lazy" alt="Snowdonia" data-original="bin/images/thumb/_MG_1121_Panorama.jpg" style="width: 350px; height: 175px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                            <a class="fancybox Landscape" rel="gallery" href="bin/images/large/_MG_0708.jpg" title="The Needles">
+            <img class="item lazy" alt="The Needles" data-original="bin/images/thumb/_MG_0708.jpg" style="width: 350px; height: 233px;" alt="Loading..." src="img/NFFFFFF-0.png" />
+            <div class="loading"></div>
+          </a>
+                
+      </div>
+    </div>
+    <button type="button" class="btn btn-default scroll-to-top">Scroll to top &#x25B2;</button>
+
+    <div class="footer">
+      <p>
+        Photography &copy; Copyright Andrew Briggs - Powered by <a href="https://github.com/brggs/Simplicity-for-Lightroom" title="Simplicity for Lightroom" target="_blank">Simplicity for Lightroom</a>
+      </p>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/centermasonry.js"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
