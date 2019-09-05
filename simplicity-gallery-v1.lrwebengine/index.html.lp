@@ -82,7 +82,7 @@
 
     <div class="footer">
       <p>
-        Photography &copy; $model.metadata.copyright - Powered by <a href="http://brggs.github.io/Simplicity-for-Lightroom" title="Simplicity for Lightroom" target="_blank">Simplicity for Lightroom</a>
+        Photography &copy; $model.metadata.copyright - Powered by <a href="https://github.com/brggs/Simplicity-for-Lightroom" title="Simplicity for Lightroom" target="_blank">Simplicity for Lightroom</a>
       </p>
     </div>
 
